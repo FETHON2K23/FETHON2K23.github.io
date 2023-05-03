@@ -40,13 +40,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo img {
+.navbar .logo div .im1 {
   height: 40px;
 }
 .navbar .logo p {
   color: white;
 }
-.navbar .logo .aa {
+.navbar .logo div .im2 {
   display: none;
 }
 .navbar .menu li {
@@ -116,10 +116,13 @@ body {
   color: rgb(246, 255, 0);
 }
 .home .home-content .text-3 {
+  display: flex;
+  flex-direction: row;
   font-size: 40px;
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
+  padding-left: 10px;
   color: blue;
   font-weight: 900;
 }
@@ -354,6 +357,17 @@ footer .thanks {
   .home .max-width {
     margin-left: 0px;
   }
+  .skills .text .a1 {
+    display: none;
+  }
+  .skills .text .a2 {
+    height: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (max-width: 1100px) {
   .about .about-content .left img {
@@ -414,6 +428,9 @@ footer .thanks {
     margin: 20px 0;
     font-size: 20px;
   }
+  .navbar .menu.deactive {
+    left: -100%;
+  }
   .home .home-content .text-2 {
     font-size: 70px;
   }
@@ -434,45 +451,49 @@ footer .thanks {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-  .skills .text .a1 {
-    display: none;
-  }
-  .skills .text .a2 {
-    height: 720px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .home-content-2 img {
     display: none;
   }
 }
 @media (max-width: 690px) {
-  .navbar .logo img {
+  .navbar .logo div .im1 {
     display: none;
   }
   .navbar .logo p {
     display: none;
   }
-  .navbar .logo .aa {
-    height: 40px;
+  .navbar .logo div .im2 {
+    display: block;
+    height: 30px;
   }
   .max-width {
     padding: 0 23px;
   }
   .home .home-content .text-2 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .home .home-content .text-3 {
     font-size: 30px;
+  }
+  .home .home-content .text-1 {
+    font-size: 20px;
   }
   .home .home-content a {
     font-size: 20px;
   }
   .home .home-content-2 img {
     display: none;
+  }
+  .home .home-content .text-3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    margin: 5px 0;
+  }
+  .home .home-content .text-3 span {
+    margin-left: -10px;
+    color: blue;
+    font-weight: 900;
   }
   .max-width {
     max-width: 800px;

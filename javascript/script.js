@@ -9,9 +9,16 @@ $(document).ready(function(){
         }
     })
     //menu
-    $('.menu-btn').click(function(){
+    
+    $('#home').click(function(){
+        $('.navbar .menu').toggleClass('deactive');
+    });
+
+    $('#menu-btn').click(function(){
         $('.navbar .menu').toggleClass('active');
     });
 })
+
+
 
 
