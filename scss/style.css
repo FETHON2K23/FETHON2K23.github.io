@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+}
+
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 999;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 10px 0;
+  background: rgb(0, 0, 0);
+}
+.navbar.sticky .logo img {
+  height: 40px;
+}
+.navbar.sticky .menu li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo img {
+  height: 40px;
+}
+.navbar .logo p {
+  color: white;
+}
+.navbar .logo .aa {
+  display: none;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li .register {
+  font-weight: 800;
+  margin-left: 25px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+.navbar .menu li .register:hover {
+  background-color: rgb(0, 234, 255);
+  color: #000000;
+}
+.navbar .menu li a {
+  font-weight: 800;
+  margin-left: 25px;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.max-width {
+  max-width: 1680px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* Home styling */
+.home {
+  display: flex;
+  background: url(/assets/images/earth.png) no-repeat right;
+  background-color: #000000;
+  border: 1px solid blue;
+  height: 100vh;
+  color: rgb(241, 241, 241);
+  min-height: 500px;
+}
+.home .max-width {
+  margin: auto 0 auto 30px;
+  display: flex;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-family: "Bruno Ace", cursive;
+  margin-top: 80px;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-2 span {
+  color: rgb(246, 255, 0);
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: blue;
+  font-weight: 900;
+}
+.home .home-content a {
+  display: inline-block;
+  background: #002aff;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding: 12px 35px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color: azure;
+  background: none;
+}
+.home .home-content-2 img {
+  margin-left: 250px;
+  height: 250px;
+  width: 250px;
+  animation: rotate 40s infinite;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(-30deg) translateY(3em);
+  }
+}
+/* about styling */
+section {
+  padding: 10px 0;
+}
+section .title {
+  font-family: "Goldman", cursive;
+  position: relative;
+  color: black;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.about {
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 80px;
+  background: url(/assets/images/sky\ blue.png) no-repeat right;
+  border: 1px solid blue;
+}
+.about .title {
+  color: white;
+}
+.about .about-content {
+  font-family: "Kalam", cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .column .text-1 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.about .about-content .column .text-2 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.about .about-content .column .text-2 p {
+  padding-bottom: 10px;
+}
+.about .about-content .column a {
+  display: inline-block;
+  background: #0011ff;
+  color: azure;
+  font-size: 25px;
+  padding: 12px 35px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.about .about-content .column a:hover {
+  color: azure;
+  background: none;
+}
+
+/* registration Styling*/
+.Registration {
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 80px;
+  background: url(/assets/images/sky.jpg) no-repeat right;
+  border: 1px solid blue;
+}
+.Registration .title {
+  color: white;
+}
+.Registration .about-content {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.Registration .about-content .right p {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.Registration .about-content .right .info p {
+  font-size: 20px;
+}
+.Registration .about-content .right .info span {
+  color: rgb(0, 229, 255);
+}
+.Registration .about-content .column .text-2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.Registration .about-content .column .text-2 p {
+  padding-bottom: 10px;
+}
+.Registration .about-content .column a {
+  display: inline-block;
+  background: #0011ff;
+  color: azure;
+  font-size: 25px;
+  padding: 12px 35px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.Registration .about-content .column a:hover {
+  color: azure;
+  background: none;
+}
+
+/* section styling*/
+.section .title {
+  position: relative;
+  color: black;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+/* Projects styling*/
+/*skills stylising*/
+.skills {
+  background: black;
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid rgb(8, 0, 255);
+  max-width: 100%;
+}
+.skills .title {
+  color: white;
+  margin-bottom: -30px;
+}
+.skills .max-width {
+  max-width: 1600px;
+}
+.skills .text .a1 {
+  height: 45rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skills .text .a2 {
+  display: none;
+}
+.skills .container {
+  display: flex;
+  overflow-x: auto;
+  background: black;
+  border: 3px solid rgb(21, 0, 255);
+  border-radius: 45px;
+}
+.skills .container .card {
+  background: rgb(0, 0, 0);
+  border-radius: 40px;
+  border: 3px solid black;
+  padding: 25px 35px;
+  margin: 20px;
+}
+.skills .container .card .box {
+  width: 200px;
+  transition: all 0.3s ease;
+}
+.skills .container .card:hover .box {
+  transform: scale(1.05);
+}
+.skills .container .card img {
+  border: 3px solid white;
+  border-radius: 30px;
+  height: 220px;
+  width: 220px;
+}
+.skills .container .card:hover {
+  background-color: #EFC3F5;
+}
+
+/* Contacts */
+/*footer section*/
+footer {
+  background: black;
+  padding: 20px 25px 20px;
+  color: white;
+  text-align: center;
+}
+footer span {
+  color: aqua;
+}
+footer div {
+  padding: 10px;
+}
+footer .thanks {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 0;
+}
+
+/*responsive design*/
+@media (max-width: 1330px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+  .contacts .cont-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .contacts form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .skills .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #111;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 915px) {
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .projects .projects-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .skills .text .a1 {
+    display: none;
+  }
+  .skills .text .a2 {
+    height: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-content-2 img {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  .navbar .logo img {
+    display: none;
+  }
+  .navbar .logo p {
+    display: none;
+  }
+  .navbar .logo .aa {
+    height: 40px;
+  }
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 30px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .home .home-content-2 img {
+    display: none;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .projects .projects-content .card {
+    width: 100%;
+  }
+  .contacts .cont-container form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .text .a1 {
+    display: none;
+  }
+  .skills .text .a2 {
+    height: 720px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Registration .about-content {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Registration .about-content .right {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  nav .max-width .logo a {
+    color: rgb(255, 255, 255);
+  }
+  .home .home-content .text-1 {
+    padding-top: 40pxpx;
+    margin-top: 40px;
+  }
+  .home .home-content .text-2 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 25px;
+  }
+  .about .max-width {
+    padding: 0 23px;
+  }
+  .about .about-content .column .text-1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .about .about-content .column .text-2 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .about .about-content .column .text-2 p {
+    padding-bottom: 10px;
+  }
+  .skills .container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .contacts .cont-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
