@@ -9,7 +9,7 @@
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     &.sticky {
-        padding: 10px 0;
+        padding: 5px 0;
         background: rgb(0, 0, 0);
         & .logo img {
             height: 40px;
@@ -65,7 +65,7 @@
             color: rgb(255, 255, 255);
             transition: color 0.3s ease;
             &:hover {
-                background-color: rgb(255, 255, 255);
+                background-color: rgb(255, 239, 9);
                 color: #000000;
             }
             
@@ -121,7 +121,7 @@
         margin: 5px 0;
         & span {
             padding-left: 10px;
-            color: blue;
+            color: rgb(255, 208, 0);
             font-weight: 900;
         }
     }
