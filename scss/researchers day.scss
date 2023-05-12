@@ -87,7 +87,7 @@
 
 .home {
     display: flex;
-    background: url(https://www.monarch-innovation.com/wp-content/uploads/elementor/thumbs/Mechanical-Engineering-Services1-pf6pbt3efftly3tub3fu4n2632a4ct6swsd4jxvpj4.jpg) no-repeat right;
+    background: url(https://wallpaperaccess.com/full/1977345.jpg) no-repeat ;
     
     background-color: #000000;
     border: 1px solid blue;
@@ -195,8 +195,12 @@ section{
 .about{
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 80px;
-    background: url(/assets/images/sky\ blue.png) no-repeat top;
+    background: url(https://images8.alphacoders.com/939/939716.png)  no-repeat right ;
+    
     border: 1px solid blue;
+    height: 100vh;
+    min-height: 500px;
+
     .title{
         color: white;
     }
@@ -211,14 +215,18 @@ section{
     }
    
     & .about-content .column{
+        color: whitesmoke;
         .text-1{
-            font-size: 30px;
+            padding-top: 60px;
+            font-size: 40px;
+            font-weight: 700;
             padding-bottom: 40px;
         }
         .text-2{
-            font-size: 20px;
+            font-size: 30px;
             padding-bottom: 30px;
             margin-bottom: 20px;
+            font-weight: 700;
             & p{
                 padding-bottom: 10px;
                 
@@ -250,6 +258,8 @@ section{
     padding-bottom: 80px;
     background: url(/assets/images/sky.jpg) no-repeat bottom;
     border: 1px solid blue;
+    height: 100vh;
+    min-height: 500px;
     .title{
         color: white;
     }
@@ -278,6 +288,7 @@ section{
     & .about-content .column{
         
         .text-2{
+            padding-top: 60px;
             font-size: 30px;
             margin-bottom: 20px;
             & p{
@@ -448,14 +459,9 @@ section{
                 width: calc(100% - 90px);
             }
             &:nth-child(1):before, &:nth-child(1):after{
-                background: linear-gradient(315deg, rgb(16, 5, 112), rgb(131, 3, 3));
+                background: linear-gradient(315deg, rgb(185, 174, 14), rgb(255, 0, 0));
 
             }
-            &:nth-child(2):before, &:nth-child(2):after{
-                background: linear-gradient(315deg, rgb(146, 0, 0), rgb(18, 2, 107));
-
-            }
-
 
             span::before{
                 content: '';
