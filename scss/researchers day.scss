@@ -181,7 +181,7 @@ section{
     & .title{
         font-family: 'Ubuntu', sans-serif;
         position: relative;
-        color:black;
+        color:rgb(218, 255, 6);
         text-align: center;
         padding: 60px 0;
         font-size: 40px;
@@ -195,14 +195,14 @@ section{
 .about{
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 80px;
-    background: url(https://images8.alphacoders.com/939/939716.png)  no-repeat right ;
+    background: url(https://wallpapercave.com/wp/wp2890665.jpg)  no-repeat left ;
     
     border: 1px solid blue;
     height: 100vh;
     min-height: 500px;
 
     .title{
-        color: white;
+        color: rgb(0, 255, 234);
     }
     
     & .about-content{
@@ -256,12 +256,12 @@ section{
 .Registration{
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 80px;
-    background: url(/assets/images/sky.jpg) no-repeat bottom;
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700320754-optimized.jpg) no-repeat bottom;
     border: 1px solid blue;
     height: 100vh;
     min-height: 500px;
     .title{
-        color: white;
+        color: rgb(0, 248, 236);
     }
     
     & .about-content{
@@ -320,10 +320,10 @@ section{
 .submission{
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 80px;
-    background: url(/assets/images/sky.jpg) no-repeat top;
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700325017.jpg) no-repeat top;
     border: 1px solid blue;
     .title{
-        color: white;
+        color: rgb(0, 248, 236);
     }
     
     & .about-content{
@@ -403,7 +403,7 @@ section{
     border: 1px solid rgb(8, 0, 255);
     max-width: 100%;
     .title{
-        color: white;
+        color: rgb(0, 248, 236);
         margin-bottom: -30px;
     }
     & .max-width{
@@ -883,20 +883,20 @@ footer{
         }
     }
     .about{
+        height: 100vh;
+        min-height: 800px;
         .max-width{
             padding:0 23px;
         }
         & .about-content .column{
             .text-1{
                 font-size: 20px;
-                padding-bottom:20px;
+                padding-bottom: 5px;
             }
             .text-2{
                 font-size: 20px;
-                padding-bottom: 30px;
-                margin-bottom: 20px;
                 & p{
-                    padding-bottom: 10px;
+                    padding-bottom: 5px;
                     
                 }
             }
@@ -906,6 +906,24 @@ footer{
     .events .container{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+    }
+    .Registration{
+        height: 100vh;
+        min-height: 800px;
+        .about-content .column{
+            .text-2{
+                font-size: 20px;
+            }
+        }
+    }
+    .submission{
+        height: 80vh;
+        min-height: 400px;
+        .about-content .column{
+            .text-2{
+                font-size: 20px;
+            }
+        }
     }
     .contacts {
         .cont-container{
